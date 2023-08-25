@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ol{
+            font: 14pt arial;
+        }
+        ul{
+            font: 14pt arial;
+        }
+        dl{
+            font: 14pt arial;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Trabalhando com Listas.</h1>
+    <h2>Ordered Lists (Listas Ordenadas).</h2>
+    <ol type="I">
+    <li>Acordar</li>  <!--O fechamento das tags </li> é opcional.-->
+    <li>Escovar os dentes</li>
+    <li>Tomar café</li>
+    <li>Assistir o jornal</li>
+    <li>Faculdade</li>
+    </ol> <!--OBS! Caso queira alterar o tipo de lista é só colocar o parâmetro 
+    type dentro da tag <ol>-->
+    <h2>Unordered Lists (Listas não Ordenadas).</h2>
+    <h3>Tamém chamadas de <mark>listas com marcadores.</mark></h3><!--Listas 
+    com marcadores são aquelas onde a ordem dos itens não influenciará no 
+    significado da lista.-->
+     <ul type="square">
+    <li>Item 1</li> 
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    </ul><!--OBS! O marcador padrão é a bolinha preta totalmente preenchida(circle),
+    mas existe a opção de configurar a propriedade type da tag <ul> com os seguintes 
+    valores: disc(uma bola preta totalmente pintada).
+    square(um pequeno quadrado preto totalmente pintado).-->
+    <h2>LIstas Mistas.</h2><!--Podemos também criar listas mistas, configurando listas 
+    dentro de outras listas, como no exemplo abaixo:-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <h2>LIstas de Definições.</h2> <!--É como se fosse um dicionário, temos os termos e as 
+    sua descrições. É uma lista sem demarcadores, mas bem útil em alguns casos.-->
+    <dl> <!--DL significa definição da lista.-->
+        <dt>HTML</dt> <!--DT significa definição do termo.-->
+        <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd><!--DD significa definição da descrição.-->
+        <dt>CSS</dt>
+        <dl>Linguagem de marcação para especifição de estilos em sites.</dl>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividades em sites.</dd>
+    </dl>
+</body>
+</html>

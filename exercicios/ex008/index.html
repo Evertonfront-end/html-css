@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações.</title>
+</head>
+<body>
+    <h1>Outras Formatações.</h1>
+    <h2>Código-Fonte / Pré-Formatação </h2>
+    <p>O comando <code>document.getElementById(teste)</code> É escrito em JavaScript.</p>
+    <!--A principal vantagem no uso dessa tag é o valor semântico que ela representa, indicando 
+    ao navegador que se trata de um código de computador. No caso aqui o código fonte é:
+    document.getElementById, que é um código usado em JavaScript. Existe também um efeito visual, pois
+    as letras ficam no modo mono-espaçadas(monospace), o que facilita bastante a leitura do código.-->
+    <h1>Exemplo de código em Python</h1>
+    <code>
+        num = int(input('Digite um número:'))
+        if num % 2 == 0:
+        print(f'O número {num} é par')
+        else:
+        print('f'O número {num} é impar')
+        print('FIM DO PROGRAMA')
+        <!--A desvantagem é que a tag <code> não organiza o seu cógigo com indentação, ou seja, a 
+        arrumação do código, tudo alinhado. -->
+    </code>
+    <!--Para resolver esse problema, vamos usar outra tag HTML chamada <pre>, que mantém o texto pré-for
+        matado, exatamente da mesma maneira na qual ele foi digitado, incluindo qubras de linhas, espaços
+    e tabulações. Veja:-->
+    <h1>Exemplo de código em Python</h1>
+    <pre>
+        <code>
+num = int(input('Digite um número:'))
+if num % 2 == 0:
+print(f'O número {num} é par')
+else:
+print('f'O número {num} é impar')
+print('FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <!--Depois que o seu código for envelopado, para alinhar é só selecionalo, segura a tecla shift e aperta 
+    a tecla tab. E caso queira mais afastado seleciona o código e aperta a tecla tab.-->
+</body>
+</html>
